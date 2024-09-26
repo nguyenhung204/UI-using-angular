@@ -1,0 +1,77 @@
+<div class="container-fluid">
+    <div class="head">
+        <img class="img-fluid" src="../../assets/banner-2.jpg" alt="">
+        <img class="img-fluid" src="../../assets/banner-teams.jpg" alt="">
+    </div>
+    <main class="main">
+        <div class="container-card">
+            <div class="card" (click)="selectItem(item)" data-bs-toggle="modal" data-bs-target="#staticBackdrop" *ngFor="let item of teams" style="width: 18rem;">
+                <img [src]="item.img" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.position}}</h5>
+                    <p class="card-text">{{item.name}}</p>
+                    <div class="infor">
+                        <span><img src="../../assets/material-symbols_phone-android-rounded.svg" alt="">Cell phone:
+                            (555) 555-1234</span>
+                        <span><img src="../../assets/material-symbols_mail-rounded.svg" alt="">Email:
+                            abc.gmail.com</span>
+                        <span><img src="../../assets/material-symbols_deskphone-rounded.svg" alt="">Office phone: (206)
+                            782-8410</span>
+                        <span><img src="../../assets/material-symbols_fax-rounded.svg" alt="">Fax: (123)-456-7890</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                    <a class="page-link"><i class="fa fa-chevron-left"></i></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item disabled">
+                    <a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    
+    <div class="footer"><app-footer></app-footer></div>
+</div>
+
+<!-- Modal -->
+<div class="modal modal-lg " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid" [src]="selectedItem.img">
+                <div class="content">
+                    <div class="left">
+                        <div class="infor">
+                            <h6 class="sub-title">Contact</h6>
+                            <span><img src="../../assets/material-symbols_phone-android-rounded.svg" alt="">Cell phone:
+                                (555) 555-1234</span>
+                            <span><img src="../../assets/material-symbols_mail-rounded.svg" alt="">Email:
+                                abc.gmail.com</span>
+                            <span><img src="../../assets/material-symbols_deskphone-rounded.svg" alt="">Office phone: (206)
+                                782-8410</span>
+                            <span><img src="../../assets/material-symbols_fax-rounded.svg" alt="">Fax: (123)-456-7890</span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="position-name d-inline-flex align-items-center">
+                            <h5 class="m-0">{{selectedItem.name}}</h5>
+                            <div class="divide"></div>
+                            <h5 style="color: #4D63E2;" class="m-0">{{selectedItem.position}}</h5>
+                        </div>
+                        <p class="m-0 character">{{selectedItem.character}}</p>
+                        <p class="m-0 ">{{selectedItem.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

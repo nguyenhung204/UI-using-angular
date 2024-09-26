@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.title-img{
+    display: flex;
+    gap: 8px;
+    max-width: 100%;
+    width: 100%;
+    max-height: 500px;
+}
+.title-img img{
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.badge{
+    max-width: fit-content;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    gap: 8px;
+    border-radius: 40px;
+    background: var(--Neutral-N30, #EBEBEB);
+    color: var(--Neutral-N500, #3B3B3B);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 18px */
+    letter-spacing: 0.18px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 104px;
+}
+h2 h4 h5 {
+    color: var(--Neutral-N500, #3B3B3B);
+}
+.time{
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    color: var(--Neutral-N60, #B0B0B0);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.24px;
+    line-height: 150%;
+}
+.content{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+}
+.content-left{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 60%;
+    max-width: 60%;
+}
+.text p{
+    white-space: normal;
+    color: var(--Neutral-N200, #666);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    letter-spacing: 0.16px;  
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.content-right{
+    width: 40%;
+    max-width: 40%;
+    position: relative;
+}
+.helper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 12px;
+    border: solid 1px #B0B0B0;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 15%;
+
+}
+.number{
+    display: flex;
+    color: #B0B0B0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color:#EBEBEB;
+    justify-content: center;
+    align-items: center;
+}
+.step{
+    display: inline-flex ;
+    gap: 5px;
+}
+.step span{
+    color: #B0B0B0;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+}
+.divide{
+    height: 1px;
+    background-color: #B0B0B0;
+    max-width: 100%;
+    width: 100%;
+}
+.more-news{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+.more-news h4{
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 42px */
+    letter-spacing: 0.28px;
+}
+.container-blogs{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 44px 32px;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    max-height: fit-content;
+    min-height: 400px;
+    min-width: 350px;
+    flex-direction: column;
+    flex: 1 0 0;
+    border-radius: 24px;
+    border: 2px solid var(--Neutral-N30, #EBEBEB);
+}
+.card .card-img-top{
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius:24px 24px 0px 0px;
+    flex: 1 0 0;
+}
+.card-body{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    gap: 12px;
+    align-self: stretch;
+    border-radius:0px 0px 24px 24px ;
+    background: var(--Neutral-N10, #FAFAFA);
+}
+.card-body .badge{
+    max-width: fit-content;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    gap: 8px;
+    border-radius: 40px;
+    background: var(--Neutral-N30, #EBEBEB);
+    color: var(--Neutral-N500, #3B3B3B);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 18px */
+    letter-spacing: 0.18px;
+}
+.card-title{
+    color: var(--Neutral-N500, #3B3B3B);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+    letter-spacing: 0.2px;
+}
+.card p{
+    color: var(--Neutral-N60, #B0B0B0);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    letter-spacing: 0.14px;
+}
+.card-text{
+    display: flex;
+    justify-content: space-between;
+}
+.card p a{
+    color: var(--Blue-blue-500, #4D63E2);
+    font-size: 16px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.24px;
+}
+
+
+

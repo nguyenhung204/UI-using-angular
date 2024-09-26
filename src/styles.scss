@@ -1,1 +1,25 @@
+
+
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --footer-bg-color: #3746A0;
+    --nav-bg-color: #FCFCFC;
+    --text-nav-color : #666;
+    --background-color : #fff;
+    --background-btn : #4D63E2;
+    --text-color-help : #3B3B3B, #666, #B0B0B0, #FFF;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #fff;
+  max-width: 100%;
+  width: 100%;
+  font-family: Roboto;
+  overflow-x: hidden;
+}
+html, body { height: 100%; }
+

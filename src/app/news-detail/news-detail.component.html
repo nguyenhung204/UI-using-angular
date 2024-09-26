@@ -1,0 +1,130 @@
+<div class="container-fluid">
+    <div class="main">
+        <h2>Drones and AI Ward Off Shark Attacks as Predators Hunt Closer to Shore</h2>
+        <div class="time">
+            <p>26/06/2024</p>
+            <p>.</p>
+            <p>7 minutes read</p>
+        </div>
+        <img class="img-fluid" src="../../assets/new-detail.jpg" alt="">
+
+        <div class="content">
+            <div class="content-left">
+                <h4>Safeguarding Against Increasing Shark Attacks in Coastal Waters</h4>
+                <div class="text">
+                    <p>In recent years, there has been a concerning rise in shark attacks in coastal waters around the
+                        world. As human activity in these areas continues to increase,
+                        so does the interaction between people and sharks. However, advancements in technology,
+                        specifically drones and artificial intelligence (AI), are offering promising solutions to
+                        safeguard against these incidents and protect beachgoers.
+                    </p>
+
+                    <p>One of the key advantages of drones is their ability to provide an aerial perspective of the
+                        coastal waters.
+                        Equipped with high-resolution cameras and real-time video streaming capabilities, drones can
+                        quickly and
+                        efficiently survey large stretches of coastline, identifying potential shark activity. This
+                        enables authorities to
+                        promptly alert beach authoritiesand visitors, allowing them to take necessary precautions or
+                        evacuate the area if needed.
+                    </p>
+                    <p>But it doesn't stop there. AI plays a crucial role in analyzing the vast amount of data collected
+                        by drones. By employing machine
+                        learning algorithms, AI systems can detect patterns and behaviors indicative of sharks. These
+                        algorithms can distinguish
+                        between different marine species, including sharks, based on their size, shape, and movement
+                        patterns. This automated analysis
+                        significantly reduces the time and effort required for human operators to manually review the
+                        drone footage, ensuring a more
+                        efficient and accurate identification process.
+                    </p>
+                    <p>
+                        In addition to real-time monitoring, drones equipped with AI can also act as early warning
+                        systems. By continuously monitoring the
+                        behavior of sharks in coastal waters, AI algorithms can predict the likelihood of an attack
+                        occurring. This proactive approach
+                        allows authorities to implement preventive measures such as deploying shark nets, increasing
+                        lifeguard presence, or even
+                        temporarily closing beaches during periods of heightened risk.
+                    </p>
+                </div>
+
+                <h4>The Importance of Public Education and Awareness</h4>
+                <div class="text">
+                    <p>
+                        Furthermore, the combination of drones and AI can facilitate rapid response strategies in the
+                        event
+                        of a shark sighting. Drones can quickly
+                        relay information to lifeguards or emergency responders, enabling them to reach the scene
+                        promptly
+                        and take appropriate action.
+                        This can include issuing warnings, guiding people away from the area, or initiating rescue
+                        operations if necessary.
+                    </p>
+                    <p>
+                        It's important to note that while drones and AI offer valuable tools in mitigating shark
+                        attacks,
+                        they should not be seen as a standalone
+                        solution. Public education and awareness programs are equally crucial in promoting responsible
+                        behavior and ensuring beachgoers
+                        understand the potential risks associated with entering the water. Additionally, ongoing
+                        research
+                        and collaboration between
+                        marine biologists, conservation organizations, and technology developers are vital in refining
+                        these
+                        technologies and
+                        enhancing their effectiveness over time.
+                    </p>
+                    <p>
+                        As we continue to navigate the delicate balance between human recreational activities and the
+                        natural environment, the integration of drones and AI in coastal safety measures represents a
+                        significant step forward. By harnessing the power of technology, we can better protect both
+                        humans
+                        and marine wildlife, creating a safer and more harmonious coexistence in our coastal waters.
+                    </p>
+                </div>
+                <img src="../../assets/news-detail2.jpg" alt="">
+            </div>
+
+            <div class="content-right">
+                <div class="helper">
+                    <h5>Summary</h5>
+                    <div class="step">
+                        <div style="background-color: #666; color: #FFF;" class="number">1</div>
+                        <span style="color: #3B3B3B;">Safeguarding Against Increasing Shark Attacks in Coastal
+                            Waters</span>
+                    </div>
+                    <div class="step">
+                        <div class="number">2</div>
+                        <span>The Importance of Public Education and Awareness</span>
+                    </div>
+                    <div class="step">
+                        <div class="number">3</div>
+                        <span>Collaborating for Success: Scientists, Conservationists, and Technologists</span>
+                    </div>
+                    <div class="step">
+                        <div class="number">4</div>
+                        <span>Striking a Balance: Protecting Humans and Preserving Marine Ecosystems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divide"></div>
+        <div class="more-news">
+            <h4>More news</h4>
+            <div class="container-news">
+                <div class="card" *ngFor="let item of news" >
+                    <img [src]="item.img" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.title}}</h5>
+                        <p class="card-text">{{item.content}}</p>
+                        <p style="color: var(--Neutral-N60, #B0B0B0);;"> <img src="../../assets/calenda.svg"
+                                alt="">{{item.date}}</p>
+                        <p><a [routerLink]="['/news/details']">Read more <i class="fa fa-chevron-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"><app-footer></app-footer></div>
+</div>

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    max-width: 100%;
+    
+    height: auto;
+}
+
+header{
+    overflow-x: hidden;
+    display: flex;
+    max-width: 100%;
+    padding: 16px  104px 0px 104px ;
+    gap: 8px;
+    background-color: var(--nav-bg-color);
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    position: sticky;
+}
+.logo{
+    padding-bottom: 16px;
+    max-width: 100%;
+    margin-right:50px ;
+}
+.navbar-toggler{
+    margin-bottom: 16px;
+}
+.nav-header{
+    width: 100%;
+}
+.nav-item{
+    cursor: pointer;
+    padding: 12px 16px 28px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var( --text-nav-color);
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 700;
+    // line-height: 150%; 
+    letter-spacing: 0.24px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.active-nav-item {
+    color: var(--footer-bg-color); /* Màu chữ */
+    font-weight: 700; /* Chữ đậm */
+    border-bottom: 4pt solid var(--footer-bg-color); /* Border dưới */
+}
+
+
+@media screen and (max-width: 835px) {
+    header{
+        padding: 0px 40px;
+        display: flex;
+        align-items: center;
+    }
+    .nav-item {
+        font-size: 0.4em; /* Kích thước chữ nhỏ hơn cho màn hình nhỏ */
+        padding: 8px 12px 16px 12px; /* Khoảng cách giữa các mục nhỏ hơn cho màn hình nhỏ */
+    }
+  
+}
+
+
+@media screen and (max-width: 376px) {
+    header{
+        padding: 0px 16px;
+    }
+    .nav-item {
+        font-size: 0.5em; /* Kích thước chữ nhỏ hơn nữa cho màn hình rất nhỏ */
+        padding: 4px 8px 12px 8px;
+    }
+}

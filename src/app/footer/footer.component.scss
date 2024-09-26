@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container-fluid{
+    max-width: 100%;
+    padding: 80px 104px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    background-color: var(--footer-bg-color);
+}
+.footer-container{
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.social-logo{
+    display: flex;
+    gap: 8px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #EBEBEB;
+}
+.main-content{
+    max-width: 100%;
+    display: flex;
+    gap: 24px;
+    flex: 1 0 0;
+}
+
+.content-brand{
+    width: 50%;
+}
+.content-office{
+    width: 50%;
+}
+.brand{
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+.office{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.infor{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.infor h6{
+    color: var(--Neutral-N10, #FAFAFA);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+    letter-spacing: 0.2px;
+}
+.infor article{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.21px;
+    display: flex;
+    flex-direction: column;
+}
+.infor article label{
+    display: flex;
+    gap: 8px;
+    align-self: stretch;
+    align-items: flex-start;
+    line-height: 200%; 
+}
+.infor article label img{
+    max-width: 20px;
+    width: 20px;
+}
+.tangle{
+    width: 16px;
+    height: 16px;
+    background: var(--Blue-blue-900, #202A5F);
+}
+.divide{
+    height: 1px;
+    background: var(--Neutral-N0, #FFF);
+    opacity: 0.5;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: fit-content;
+}
+.list li{
+    list-style: none;
+}
+.list li a{
+    color: var(--Blue-blue-100, #C8CFF6);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: 0.24px;
+    text-decoration: none;
+    padding-left: 2px;
+}
+.list li a img {
+    margin-right: 10px;
+}
+.plus{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-bottom{
+    padding: 0px 12px;
+    color: var(--Neutral-N500, #3B3B3B);
+    max-width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    background: var(--Neutral-N10, #FAFAFA);
+    letter-spacing: 0.18px;
+    padding: 12px 0;
+}
+
+
+
+@media screen and (max-width: 840px){
+    .container-fluild{
+        padding: 80px 24px;
+    }
+    .footer-container{
+        gap: 16px;
+    }
+    .head{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .social-logo{
+        gap: 4px;
+    }
+    .content{
+        gap: 16px;
+    }
+    .main-content{
+        flex-direction: column;
+        gap: 16px;
+        display: flex;
+    }
+    .content-brand{
+        max-width: 100%;
+        width: 100%;
+    }
+    .content-office{
+        max-width: 100%;
+        width: 100%;
+    }
+    .brand{
+        gap: 16px;
+    }
+    .office{
+        gap: 16px;
+    }
+    .infor{
+        gap: 8px;
+    }
+    .infor h6{
+        font-size: 16px;
+    }
+    .infor article{
+        font-size: 10px;
+    }
+    .list{
+        gap: 4px;
+    }
+    .list li a{
+        font-size: 12px;
+    }
+    .plus{
+        gap: 8px;
+    }
+    
+}
+@media screen and (max-width: 350px){
+    .container-fluild{
+        padding: 50px 18px;
+    }
+    .footer-container{
+        gap: 12px;
+    }
+    .head{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .social-logo{
+        gap: 4px;
+    }
+    .content{
+        gap: 8px;
+    }
+    .main-content{
+        gap: 16px;
+    }
+    .content-brand{
+        max-width: 100%;
+        width: 100%;
+    }
+    .content-office{
+        max-width: 100%;
+        width: 100%;
+    }
+    .brand{
+        gap: 8px;
+    }
+    .office{
+        gap: 8px;
+    }
+    .infor{
+        gap: 8px;
+    }
+    .infor h6{
+        font-size: 10px;
+    }
+    .infor article{
+        font-size: 8px;
+    }
+    .list{
+        gap: 4px;
+    }
+    .list li a{
+        font-size: 10px;
+    }
+    .plus{
+        gap: 4px;
+    }
+    
+}
+
+
